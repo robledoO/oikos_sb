@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "FuturaPTCondExtraBold";
+    src: url("FuturaPTCond-ExtraBold.woff2") format("woff2"), url("FuturaPTCond-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FuturaPTBold";
+    src: url("FuturaPT-Bold.woff2") format("woff2"), url("FuturaPT-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FuturaPTCondMedium";
+    src: url("FuturaPTCond-Medium.woff2") format("woff2"), url("FuturaPTCond-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FuturaPTMedium";
+    src: url("FuturaPT-Medium.woff2") format("woff2"), url("FuturaPT-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FuturaPTCondBold";
+    src: url("FuturaPTCond-Bold.woff2") format("woff2"), url("FuturaPTCond-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}

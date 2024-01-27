@@ -1,0 +1,539 @@
+.banner{
+    height: auto;
+    width: 100%;
+    font-family: 'FuturaPTCondExtraBold';
+    position: relative;
+    background-color: black;
+}
+.banner-img{
+    width: 100%;
+    height: auto;
+    content:url("../images/superbowl/desktop/Hero_Image.png");
+}
+.b_content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3vw;
+}
+.b_text{
+    color: white!important;
+    font-size: 7.5vw;
+    line-height: 1;
+    word-spacing: 5;
+    margin-bottom: 1.2vw;
+}
+.banner-title{
+    gap:1.3vw;
+}
+.focus-text{
+    color: #EF4137;
+}
+.flex-c{
+    display: flex;
+    flex-direction: column;
+}
+.flex-r{
+    display: flex;
+    flex-direction: row;
+}
+.outer-button{
+    color: #ffffff;
+    font-size: 1.3vw;
+    position: relative;
+    width: 13vw;
+    height: 3.5vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2.5px solid white;
+    cursor: pointer;
+}
+.inner-button{
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    height: 45%;
+    aspect-ratio: 1/1;
+    background: linear-gradient(to bottom right, transparent , transparent 50%, white 50%, white);
+}
+.inner-inner-button{
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    aspect-ratio: 1/1;
+    height: 40%;
+    background: linear-gradient(to bottom right, transparent , transparent 50%, black 50%, black);
+}
+.outer-button:hover{
+    background-color: white;
+    color: black;
+}
+.video-container{
+    position: relative;
+    width: 100%;
+    height: 45vw;
+    background-image: url('../images/superbowl/desktop/Yogurt_Background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    place-content: center;
+    align-items: center;
+}
+.video-fit{
+    width:89%;
+    height:80%;
+    position: relative;
+    overflow: hidden;
+    background-color: #000000;
+}
+.video-iframe{
+    width: 140%;
+    position: absolute;
+    height: 140%;
+    left: -20%;
+    top: -21%;
+}
+.video-stamp{
+    position: absolute;
+    font-family: 'FuturaPTCondExtraBold';
+    color: white;
+    height: 100%;
+    width: 100%;
+    font-size: 7vw;
+    place-content: center;
+    align-items: center;
+    text-align: center;
+}
+.video-stamp > img {
+    width: 6vw;
+    cursor: pointer;
+}
+.quotes-container{
+    position: relative;
+    width: auto;
+    height: auto;
+    background-image: url('../images/superbowl/desktop/Gradient_Background.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+.quotes-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/superbowl/desktop/Oikos_Pattern.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: 2;
+}
+.quotes-half{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 5vw 3vw 0;
+}
+.quote-image{
+    height: auto;
+    width: 50vw;
+    max-width: 60%;
+} 
+.quote-image.reverse{
+    position: absolute;
+}
+.m-qs-img{
+    content:url("../images/superbowl/desktop/Martin_Quote_Shape.png");
+}
+.s-qs-img{
+    content:url("../images/superbowl/desktop/Shannon_Quote_Shape.png");
+}
+.martin-image{
+    content:url("../images/superbowl/desktop/Martin_Photo.jpg");
+}
+.shannon_image{
+    content:url("../images/superbowl/desktop/Shannon_Photo_1.jpg");
+}
+.quote-main{
+    margin-bottom: 7vw;
+}
+.qh-1{
+    top: 0;
+}
+.qh-2{
+    bottom: 0;
+}
+.quote-box{
+    position: absolute;
+    width: 52vw;
+}
+.quote-box.reverse{
+    position: relative;
+}
+.qb-1{
+    right: 4vw;
+    top: 11vw;
+}
+.qb-2{
+    right: 4vw;
+    top: 11vw;
+}
+.quote-b{
+    position: absolute;
+    width: 5vw;
+    font-family: 'FuturaPTCondBold';
+}
+.quote-b > svg {
+    font-family: 'FuturaPTCondBold';
+}
+.quote-b > svg > text{
+    font-family: 'FuturaPTCondBold';
+}
+.quote-b.upper{
+    left: 3vw;
+    top: 0;
+}
+.quote-b.lower{
+    right: 3vw;
+    bottom: -2vw;
+}
+.quote-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    color: white;
+    padding: 5.3vw 8vw;
+    font-family: "Avenir";
+    font-size: 1.5vw;
+}
+.quote-content > p {
+    font-size: 1.3vw;
+    margin-top: 2vw;
+    font-weight: bold;
+}
+.prizes-container{
+    height: auto;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    font-family: 'FuturaPTCondExtraBold';
+}
+.prize-img{
+    width: 100%;
+    height: auto;
+    content:url("../images/superbowl/desktop/Sweepstakes_Image.png");
+}
+.prize-content{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    place-content: end;
+    gap: 2vw;
+    font-size: 7vw;
+    padding: 4vw 5vw;
+    color: white;
+    line-height: 1;
+}
+.ht-1{
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+}
+.non-focus-text{
+    margin-top: 1vw;
+    margin-bottom: 2vw;
+    font-size: 1.5vw;
+    max-width: 21vw;
+    font-family: "Avenir";
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.3;
+}
+.bts-container{
+    text-align: center;
+    font-size: 4vw;
+    background-color: black;
+    color: white;
+    font-family: 'FuturaPTCondExtraBold';
+    padding: 5vw 9vw;
+}
+.bts-container > p{
+    margin-bottom: 3vw;
+}
+#bts-img-0{
+    content:url("../images/superbowl/mobile/BTS_1.png");
+}
+#bts-img-1{
+    content:url("../images/superbowl/mobile/BTS_2.png");
+}
+#bts-img-2{
+    content:url("../images/superbowl/mobile/BTS_3.png");
+}
+#bts-img-3{
+    content:url("../images/superbowl/mobile/BTS_4.png");
+}
+.divider,.carrousel,.score_on_mbl{
+    display: none;
+}
+.gallery{
+    width: 100%;
+    height: 25vw;
+    place-content: space-between;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 3.5vw;
+}
+.sponsor-container{
+    background-color: #000000;
+    padding: 0 5vw;
+    place-content: center;
+    padding-bottom: 4vw;
+}
+.sponsor-content{
+    height: 32vw;
+    width: auto;
+    position: relative;
+}
+.sponsor-shape-img{
+    height: 100%;
+    content:url("../images/superbowl/desktop/Nutrion_Sponsor_Quote_Shape.png");
+} 
+.sponsor-content > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 0 5vw;
+    color: white;
+    font-family: "Avenir";
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.5;
+    display: flex;
+    place-items: center;
+}
+.sponsor-image{
+    height: 31.1vw;
+    width: auto;
+    position: relative;
+    aspect-ratio: 1/1;
+}
+.sponsor-impact-image{
+    height: 100%;
+    position: absolute;
+    left: -1.2vw;
+    content:url("../images/superbowl/desktop/Impact_Image.png");
+}
+.carrousel{
+    gap: 5vw;
+    margin-bottom: 9vw;
+}
+.carrousel-content{
+    place-content: space-between;
+}
+.carrousel-img{
+    width: 80%;
+}
+.carrousel-arrow{
+    width: 3.5vw;
+    cursor: pointer;
+}
+.carrousel-indicator{
+    width: 3.5vw;
+}
+.pagination{
+    width: 100%;
+    place-content: center;
+    gap: 1.7vw;
+}
+@media(min-width:768px) and (max-width:1050px){
+    .quote-b.upper{
+        top:-2vw;
+    }
+    .quote-b.lower{
+        bottom:-4.5vw;
+    }
+}
+@media(max-width:767px){
+    .banner-img{
+        content:url("../images/superbowl/mobile/Hero_Image.png");
+    }   
+    .banner-title{
+        flex-direction: column;
+        gap:0;
+    }
+    .b_content{
+        padding: 6vw 8vw;
+    }
+    .b_text{
+        font-size: 16vw;
+        margin-bottom: 4vw;
+    }
+    .outer-button{
+        font-size: 7vw;
+        width: 65vw;
+        height: 16vw;
+        border: 4px solid white;
+    }
+    .inner-button{
+        bottom: -3.8px;
+        right: -3.8px;
+    }
+    .inner-inner-button{
+        bottom: -5.2px;
+        right: -5.2px;
+    }
+    .video-container{
+        height: 65vw;
+    }
+    .video-fit{
+        width: 90%;
+        height: 78%;
+    }
+    .video-iframe{
+        width: 140%;
+        height: 140%;
+    }
+    .video-stamp{
+        line-height: 1;
+        font-size: 14vw;
+        text-align: end;
+        flex-direction: row;
+    }
+    .video-stamp > img{
+        width: 18vw;
+        margin-top: unset;
+        margin-left: 4vw;
+    }
+    .m-qs-img, .s-qs-img{
+        content:url("../images/superbowl/mobile/Martin_Quote_Shape.png");
+        transform: rotate(180deg);
+        position: relative;
+        left: 2.3vw;
+        top: -2.5vw;
+    }
+    .martin-image{
+        content:url("../images/superbowl/mobile/Martin_Image.png");
+    }
+    .shannon_image{
+        content:url("../images/superbowl/mobile/Shannon_Image.png");
+    }
+    .quote-box{
+        position: relative;
+    }
+    .quote-image{
+        width: 91.3%;
+        max-width: none;
+    }
+    .quote-box{
+        width: 100%;
+    }
+    .quote-content{
+        padding: 16vw 10vw 0 11vw;
+        font-size: 5.6vw;
+    }
+    .quote-content > p{
+        font-size: 4.5vw;
+        margin-top: 7vw;
+    }
+    .quote-main{
+        margin-bottom: 0;
+    }
+    .quotes-half{
+        padding: 0 6vw 0;
+    }
+    .qh-1, .qh-2{
+        display: flex;
+        flex-direction: column;
+        place-items: center;
+    }
+    .qb-1, .qb-2{
+        position: relative!important;
+        right: unset;
+        top: unset;
+    }
+    .quote-b.upper{
+        left: 7vw;
+        top: -2.5vw;
+    }
+    .quote-b.lower{
+        right: 5vw;
+    }
+    .quote-b{
+        width: auto;
+        height: 33vw;
+    }
+    .quotes-container{
+        background-size: 100% 100%;
+        padding-top: 9vw;
+    }
+    .score_on_dkp, .gallery,.ht-1,.quotes-background{
+        display: none;
+    }
+    .divider,.score_on_mbl{
+        display: block;
+    }
+    .carrousel{
+        display: flex;
+    }
+    .prize-img{
+        content:url("../images/superbowl/mobile/Sweepstakes_Image.png");
+    }
+    .prize-content{
+        position: relative;
+        place-content: normal ;
+        font-size: 18vw;
+        padding: 4vw 8vw;
+    }
+    .prizes-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .non-focus-text{
+        max-width: none;
+        font-size: 6vw;
+        margin-top: 9vw;
+        margin-bottom: 9vw;
+    }
+    .bts-container{
+        font-size: 18vw;
+        line-height: 1;
+        padding: 5vw 6vw;
+    }
+    .bts-container > p {
+        margin-bottom: 13vw;
+    }
+    .sponsor-shape-img{
+        content:url("../images/superbowl/mobile/Martin_Quote_Shape.png");
+        transform: rotate(180deg);
+        left: 2.3vw;
+        top: -2.5vw;
+        position: relative;
+    }
+    .sponsor-image{
+        height: auto;
+        width: 91.3%;
+    }
+    .sponsor-impact-image{
+        content:url("../images/superbowl/mobile/Impact_Image.png");
+        position: relative;
+        left: unset;
+    }
+    .sponsor-container{
+        flex-direction: column-reverse;
+        place-items: center;
+    }
+    .sponsor-content{
+        height: auto;
+    }
+    .sponsor-content > div {
+        padding: 8vw 10vw 0 11vw;
+        font-size: 5.5vw;
+        place-items: normal;
+    }
+}
