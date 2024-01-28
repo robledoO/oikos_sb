@@ -126,6 +126,7 @@
 .video-stamp>img {
     width: 6vw;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .quotes-container {
@@ -406,6 +407,7 @@
 .carrousel-arrow {
     width: 3.5vw;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .carrousel-indicator {
