@@ -496,7 +496,7 @@
         content: url("../images/superbowl/mobile/Martin_Quote_Shape.png");
         transform: rotate(180deg);
         position: relative;
-        left: 2.3vw;
+        left: 2.4vw;
         top: -2.5vw;
     }
 
@@ -513,7 +513,7 @@
     }
 
     .quote-image {
-        width: 91.3%;
+        width: 91.5%;
         max-width: none;
     }
 
@@ -625,14 +625,14 @@
         content: url("../images/superbowl/mobile/Nutrition_Sponsor_Shape.png");
         transform: rotate(180deg);
         left: 2.3vw;
-        top: -2.5vw;
-        position: relative;
+        top: -3.5vw;
+        position: absolute;
         width: 100%;
     }
 
     .sponsor-image {
         height: auto;
-        width: 91.3%;
+        width: 91.5%;
     }
 
     .sponsor-impact-image {
@@ -652,8 +652,9 @@
     }
 
     .sponsor-content>div {
-        padding: 8vw 10vw 0 11vw;
+        padding: 8vw 10vw 20vw 11vw;
         font-size: 5.5vw;
         place-items: normal;
+        position: relative;
     }
 }
