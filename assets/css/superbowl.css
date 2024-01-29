@@ -9,7 +9,7 @@
 .banner-img {
     width: 100%;
     height: auto;
-    content: url("../images/superbowl/desktop/Hero_Image.png");
+    content: url("../images/superbowl/desktop/Hero_Image.webp");
 }
 
 .b_content {
@@ -87,7 +87,7 @@
     position: relative;
     width: 100%;
     height: 45vw;
-    background-image: url('../images/superbowl/desktop/Yogurt_Background.png');
+    background-image: url('../images/superbowl/desktop/Yogurt_Background.webp');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -133,7 +133,7 @@
     position: relative;
     width: auto;
     height: auto;
-    background-image: url('../images/superbowl/desktop/Gradient_Background.png');
+    background-image: url('../images/superbowl/desktop/Gradient_Background.webp');
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -143,7 +143,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('../images/superbowl/desktop/Oikos_Pattern.png');
+    background-image: url('../images/superbowl/desktop/Oikos_Pattern.webp');
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -168,19 +168,19 @@
 }
 
 .m-qs-img {
-    content: url("../images/superbowl/desktop/Martin_Quote_Shape.png");
+    content: url("../images/superbowl/desktop/Martin_Quote_Shape.webp");
 }
 
 .s-qs-img {
-    content: url("../images/superbowl/desktop/Shannon_Quote_Shape.png");
+    content: url("../images/superbowl/desktop/Shannon_Quote_Shape.webp");
 }
 
 .martin-image {
-    content: url("../images/superbowl/desktop/Martin_Photo.jpg");
+    content: url("../images/superbowl/desktop/Martin_Photo.webp");
 }
 
 .shannon_image {
-    content: url("../images/superbowl/desktop/Shannon_Photo_1.jpg");
+    content: url("../images/superbowl/desktop/Shannon_Photo_1.webp");
 }
 
 .quote-main {
@@ -266,7 +266,7 @@
 .prize-img {
     width: 100%;
     height: auto;
-    content: url("../images/superbowl/desktop/Sweepstakes_Image.png");
+    content: url("../images/superbowl/desktop/Sweepstakes_Image.webp");
 }
 
 .prize-content {
@@ -313,19 +313,19 @@
 }
 
 #bts-img-0 {
-    content: url("../images/superbowl/mobile/BTS_1.png");
+    content: url("../images/superbowl/mobile/BTS_1.webp");
 }
 
 #bts-img-1 {
-    content: url("../images/superbowl/mobile/BTS_2.png");
+    content: url("../images/superbowl/mobile/BTS_2.webp");
 }
 
 #bts-img-2 {
-    content: url("../images/superbowl/mobile/BTS_3.png");
+    content: url("../images/superbowl/mobile/BTS_3.webp");
 }
 
 #bts-img-3 {
-    content: url("../images/superbowl/mobile/BTS_4.png");
+    content: url("../images/superbowl/mobile/BTS_4.webp");
 }
 
 .divider,
@@ -358,7 +358,7 @@
 
 .sponsor-shape-img {
     height: 100%;
-    content: url("../images/superbowl/desktop/Nutrion_Sponsor_Quote_Shape.png");
+    content: url("../images/superbowl/desktop/Nutrion_Sponsor_Quote_Shape.webp");
 }
 
 .sponsor-content>div {
@@ -388,7 +388,7 @@
     height: 100%;
     position: absolute;
     left: -1.2vw;
-    content: url("../images/superbowl/desktop/Impact_Image.png");
+    content: url("../images/superbowl/desktop/Impact_Image.webp");
 }
 
 .carrousel {
@@ -432,7 +432,7 @@
 
 @media(max-width:767px) {
     .banner-img {
-        content: url("../images/superbowl/mobile/Hero_Image.png");
+        content: url("../images/superbowl/mobile/Hero_Image.webp");
     }
 
     .banner-title {
@@ -495,7 +495,7 @@
 
     .m-qs-img,
     .s-qs-img {
-        content: url("../images/superbowl/mobile/Martin_Quote_Shape.png");
+        content: url("../images/superbowl/mobile/Martin_Quote_Shape.webp");
         transform: rotate(180deg);
         position: relative;
         left: 2.4vw;
@@ -503,11 +503,11 @@
     }
 
     .martin-image {
-        content: url("../images/superbowl/mobile/Martin_Image.png");
+        content: url("../images/superbowl/mobile/Martin_Image.webp");
     }
 
     .shannon_image {
-        content: url("../images/superbowl/mobile/Shannon_Image.png");
+        content: url("../images/superbowl/mobile/Shannon_Image.webp");
     }
 
     .quote-box {
@@ -591,7 +591,7 @@
     }
 
     .prize-img {
-        content: url("../images/superbowl/mobile/Sweepstakes_Image.png");
+        content: url("../images/superbowl/mobile/Sweepstakes_Image.webp");
     }
 
     .prize-content {
@@ -624,7 +624,7 @@
     }
 
     .sponsor-shape-img {
-        content: url("../images/superbowl/mobile/Nutrition_Sponsor_Shape.png");
+        content: url("../images/superbowl/mobile/Nutrition_Sponsor_Shape.webp");
         transform: rotate(180deg);
         left: 2.3vw;
         top: -3.5vw;
@@ -638,7 +638,7 @@
     }
 
     .sponsor-impact-image {
-        content: url("../images/superbowl/mobile/Impact_Image.png");
+        content: url("../images/superbowl/mobile/Impact_Image.webp");
         position: relative;
         left: unset;
     }
