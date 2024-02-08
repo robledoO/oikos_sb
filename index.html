@@ -389,7 +389,7 @@
                 </div>
                 <img class="img-controls secondary hidden audio-icon unmuted">
             </div>
-            <video id="video-player" class="video-iframe" preload="metadata">
+            <video id="video-player" class="video-iframe" preload="metadata" playsinline>
                 <source type="video/mp4" src="https://s3.amazonaws.com/DigitalVideos/noram/dairy/oikosyogurt/Oikos_Golf_Cart.mp4">
             </video>
         </div>
@@ -596,41 +596,99 @@
 
     <script>
         let count = 0;
+        let videoStateFocus = false;
+        let videoMuted = false;
         let touchEvent = 'ontouchstart' in window ? 'touchstart' : 'click';
+        const videoPlayer = document.getElementById("video-player");
+        const videoStamp = document.getElementById("video-stamp");
+        const videoControls = document.getElementById("video-controls");
+        const audioIcon = document.querySelector('.audio-icon');
+        const forwardIcon = document.getElementById("forward-icon");
+        const backwardIcon = document.getElementById("backward-icon");
+        const ctrlImgs = document.querySelectorAll('.img-controls');
         const dots = document.querySelectorAll('.carrousel-indicator');
         const imgs = document.querySelectorAll('.carrousel-img');
         document.getElementById("Left-Arrow").style.opacity = '0.4'
         dots[0].style.opacity = '0.4';
         imgs.forEach((el, index) => {
-            index === count ? el.style.display = 'block' : el.style.display = 'none';
+                index===count ? el.style.display = 'block' : el.style.display = 'none';
         })
 
-        function playVideo() {
-            document.getElementById("video-stamp").style.display = 'none';
-            document.getElementById("video-player").play();
+        function playVideo(){
+            videoStamp.style.display = 'none';
+            videoPlayer.play();
         }
 
         function togglePlayPause() {
             event.preventDefault();
-            if (document.getElementById("video-player").paused) {
-                document.getElementById("video-player").play();
-            } else {
-                document.getElementById("video-player").pause();
+            videoPlayer.paused ? videoPlayer.play() : videoPlayer.pause();
+        }
+
+        function toggleVideoControls(){
+            event.preventDefault();
+            if (videoStateFocus){
+                videoControls.classList.remove("shown");
+                videoControls.classList.add("hidden");
+                ctrlImgs.forEach((el, index) => {
+                    el.classList.remove("shown");
+                    el.classList.add("hidden");
+                })
+                videoStateFocus=false;
+                videoPlayer.play();
+            }else{
+                videoControls.classList.remove("hidden");
+                videoControls.classList.add("shown");
+                ctrlImgs.forEach((el, index) => {
+                    el.classList.remove("hidden");
+                    el.classList.add("shown");
+                })
+                videoStateFocus=true;
+                videoPlayer.pause();
             }
         }
 
-        document.getElementById("video-player").addEventListener(touchEvent, togglePlayPause);
+        function toggleAudio(){
+            event.preventDefault();
+            if(videoMuted) {
+                audioIcon.classList.remove("muted");
+                audioIcon.classList.add("unmuted");
+                videoPlayer.muted= false;
+                videoMuted = false;
+            } else {
+                audioIcon.classList.remove("unmuted");
+                audioIcon.classList.add("muted");   
+                videoPlayer.muted=true;
+                videoMuted = true;
+            }
+        }
 
-        function showNextItem(arrow) {
-            arrow === 'Right' && count < 3 ? count++ : arrow === 'Left' && count > 0 ? count-- : null;
-            count === 3 ? document.getElementById("Right-Arrow").style.opacity = '0.4' :
-                count === 0 ? document.getElementById("Left-Arrow").style.opacity = '0.4' :
+        function resetVideoState(){
+            videoPlayer.currentTime=0;
+            videoStamp.style.display = 'flex';
+        }
+
+        function rewindVideo(time){
+            event.preventDefault();
+            videoPlayer.currentTime=videoPlayer.currentTime+time;
+        }
+
+        videoPlayer.addEventListener(touchEvent, togglePlayPause);
+        videoControls.addEventListener(touchEvent, toggleVideoControls);
+        audioIcon.addEventListener(touchEvent, toggleAudio);
+        forwardIcon.addEventListener(touchEvent, ()=>rewindVideo(5));
+        backwardIcon.addEventListener(touchEvent, ()=>rewindVideo(-5));
+        videoPlayer.addEventListener('ended',resetVideoState,false);
+
+        function showNextItem(arrow){
+            arrow==='Right' && count<3 ? count++ : arrow==='Left' && count>0 ? count-- : null;
+            count === 3 ? document.getElementById("Right-Arrow").style.opacity = '0.4' : 
+                count === 0 ? document.getElementById("Left-Arrow").style.opacity = '0.4' : 
                     (document.getElementById("Left-Arrow").style.opacity = '1', document.getElementById("Right-Arrow").style.opacity = '1');
             dots.forEach((el, index) => {
-                index === count ? el.style.opacity = '0.4' : el.style.opacity = '1'
+                index===count ? el.style.opacity = '0.4' : el.style.opacity = '1'
             })
             imgs.forEach((el, index) => {
-                index === count ? el.style.display = 'block' : el.style.display = 'none';
+                index===count ? el.style.display = 'block' : el.style.display = 'none';
             })
         }
     </script>
