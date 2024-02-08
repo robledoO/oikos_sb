@@ -351,34 +351,52 @@
 </div>
 
 <main id="main-wrapper" class="superbowl">
-    <section class="banner">
+    <section  class="banner">
         <img class="banner-img">
         <div class="b_content">
-            <div class="b_text">
+            <div class="b_text"> 
                 <div class="flex-r banner-title">
-                    <p class="focus-text">STRONGER</p> MAKES
+                    <p class="focus-text">STRONGER</p> MAKES 
                 </div>
-                EVERYTHING BETTER
-            </div>
-            <div class="outer-button">
-                <a href="https://www.oikosyogurt.com/greek-yogurts">
-                    OUR PRODUCTS
-                </a>
-                <div class="inner-button"></div>
-                <div class="inner-inner-button"></div>
-            </div>
+                <div class="flex-r banner-second-title">
+                    <div>EVERYTHING</div> 
+                    <div class="banner-bit flex-r">
+                        BETTER
+                        <p class="reg-symbol">®</p>
+                    </div>
+                </div>
+            </div> 
+                <div class="outer-button">
+                    <a href="https://www.oikosyogurt.com/greek-yogurts">
+                        OUR PRODUCTS   
+                    </a>
+                    <div class="inner-button"></div>
+                    <div class="inner-inner-button"></div>
+                </div>
         </div>
     </section>
     <section class="video-container flex-r">
         <div class="video-fit">
-            <video id="video-player" class="video-iframe" loop preload="auto">
-                <source type="video/mp4"
-                    src="https://s3.amazonaws.com/DigitalVideos/noram/dairy/oikosyogurt/Oikos_Golf_Cart.mp4">
+            <div class="video-controls hidden flex-r" id="video-controls">
+                <div class="img-controls secondary hidden" id="backward-icon">
+                    <img src="assets/icons/superbowl/Replay_Button.svg" style="padding-top:0.2vw;">
+                    <span class="seconds-marker">5</span>
+                </div>
+                <img src="assets/icons/superbowl/Pause_Button.svg" class="img-controls hidden">
+                <div class="img-controls secondary hidden" id="forward-icon">
+                    <img src="assets/icons/superbowl/Replay_Button_Right.svg" style="padding-top:0.2vw;">
+                    <span class="seconds-marker">5</span>
+                </div>
+                <img class="img-controls secondary hidden audio-icon unmuted">
+            </div>
+            <video id="video-player" class="video-iframe" preload="metadata">
+                <source type="video/mp4" src="https://s3.amazonaws.com/DigitalVideos/noram/dairy/oikosyogurt/Oikos_Golf_Cart.mp4">
             </video>
         </div>
-        <div class="video-stamp flex-c" id="video-stamp" onclick="playVideo()">
+        
+        <div class="video-stamp flex-c" id="video-stamp" >
             HOLD MY <br class="divider">OIKOS
-            <img src="assets/icons/superbowl/Play_Button.svg">
+            <img src="assets/icons/superbowl/Play_Button.svg" onclick="playVideo()">
         </div>
     </section>
     <section class="quotes-container flex-c">
@@ -388,26 +406,11 @@
             <img class="quote-image quote-main martin-image">
             <div class="quote-box qb-1">
                 <img class="m-qs-img">
-                <svg xmlns="http://www.w3.org/2000/svg" width="68" height="151" viewBox="0 0 68 151"
-                    class="quote-b upper">
-                    <text id="_" data-name="“" transform="translate(0 116)" fill="#fff" font-size="118"
-                        font-family="FuturaPTCondBold" font-weight="800">
-                        <tspan x="0" y="0">“</tspan>
-                    </text>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="68" height="151" viewBox="0 0 68 151"
-                    class="quote-b lower">
-                    <text id="_" data-name="”" transform="translate(0 116)" fill="#fff" font-size="118"
-                        font-family="FuturaPTCondBold" font-weight="800">
-                        <tspan x="0" y="0">”</tspan>
-                    </text>
-                </svg>
+                <span class="quote-b upper">“</span>
+                <span class="quote-b lower">”</span>
                 <div class="quote-content">
-                    Making my Big Game debut with OIKOS is exciting. I like being able to show America how high protein
-                    snack options can support the strength needed for any moment that may come your way. While our game
-                    of golf takes an unexpected turn, you’ll see that I’m not worried. Thanks to great-tasting options
-                    like OIKOS Pro and OIKOS Triple Zero I’m able to save the day.
-                    <p>- MARTIN LAWRENCE</p>
+                Making my Big Game debut with OIKOS is exciting. I like being able to show America how high protein snack options can support the strength needed for any moment that may come your way. While our game of golf takes an unexpected turn, you’ll see that I’m not worried. Thanks to great-tasting options like OIKOS Pro and OIKOS Triple Zero I’m able to save the day.
+                <p>- MARTIN LAWRENCE</p>
                 </div>
             </div>
         </div>
@@ -415,27 +418,11 @@
             <img class="quote-image reverse qb-2 shannon_image">
             <div class="quote-box reverse quote-main">
                 <img class="s-qs-img">
-                <svg xmlns="http://www.w3.org/2000/svg" width="68" height="151" viewBox="0 0 68 151"
-                    class="quote-b upper">
-                    <text id="_" data-name="“" transform="translate(0 116)" fill="#fff" font-size="118"
-                        font-family="FuturaPTCondBold" font-weight="800">
-                        <tspan x="0" y="0">“</tspan>
-                    </text>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="68" height="151" viewBox="0 0 68 151"
-                    class="quote-b lower">
-                    <text id="_" data-name="”" transform="translate(0 116)" fill="#fff" font-size="118"
-                        font-family="FuturaPTCondBold" font-weight="800">
-                        <tspan x="0" y="0">”</tspan>
-                    </text>
-                </svg>
+                <span class="quote-b upper">“</span>
+                <span class="quote-b lower">”</span>
                 <div class="quote-content">
-                    I’m personally thrilled to work with OIKOS, not just because it was fun to play a different type of
-                    role on Game Day, but also because I’m personally passionate about their mission of tackling
-                    nutrition inequities through their work with HBCUs. With strength at the core of OIKOS and of this
-                    ad, it’s been a perfect match for me. So, be sure to grab your favorite OIKOS flavor, sit back and
-                    have a laugh with us during the Big Game.
-                    <p>- SHANNON SHARPE</p>
+                I’m personally thrilled to work with OIKOS, not just because it was fun to play a different type of role on Game Day, but also because I’m personally passionate about their mission of tackling nutrition inequities through their work with HBCUs. With strength at the core of OIKOS and of this ad, it’s been a perfect match for me. So, be sure to grab your favorite OIKOS flavor, sit back and have a laugh with us during the Big Game.
+                <p>- SHANNON SHARPE</p>
                 </div>
             </div>
         </div>
@@ -449,11 +436,11 @@
             </div>
             <div>
                 <div class="score_on_dkp">
-                    <p class="focus-text">PROTEIN</p>
+                    <p class="focus-text">PROTEIN</p> 
                     PRIZES
                 </div>
                 <div class="score_on_mbl">
-                    <p class="focus-text">SCORE PROTEIN</p>
+                    <p class="focus-text">SCORE PROTEIN</p> 
                     WIN PRIZES
                 </div>
                 <p class="non-focus-text">You could win daily prizes and a grand prize home theater!</p>
@@ -465,7 +452,9 @@
                     </div>
                 </a>
             </div>
-
+        </div>
+        <p class="legal">Terms & Conditions apply. <br class="divider"> For complete rules, visit <a style="text-decoration: underline;" href="https://holdmyoikos.actv8me.com/official-rules">holdmyoikos.actv8me.com/official-rules</a>.</p>
+        <div class="gradient">
         </div>
     </section>
     <section class="bts-container">
@@ -502,11 +491,7 @@
         <div class="sponsor-content">
             <img class="sponsor-shape-img">
             <div class="">
-                At OIKOS, we believe everyone should have access to protein and nutrition that helps them feel their
-                strongest. That’s why as the Official Nutrition Sponsor of Jackson State University athletics, we are
-                dedicated to bringing improved nutrition education, and assisting in improved nutrition food access. And
-                we’re just getting started in our partnership journey with Historically Black Colleges & Universities
-                (HBCUs). Stay tuned for more news and information throughout 2024.
+                We believe everyone should have access to protein and nutrition that helps them feel their strongest. That’s why as the Official Nutrition Sponsor of Jackson State University athletics, we are dedicated to bringing improved nutrition education, and assisting in improved nutrition food access. And we’re just getting started in our partnership journey with Historically Black Colleges & Universities (HBCUs). Stay tuned for more news and information throughout 2024.
             </div>
         </div>
         <div class="sponsor-image">
